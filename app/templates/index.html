@@ -1,15 +1,15 @@
 {% extends "base.html" %}
 {% block additional_css %}
-    <link rel="stylesheet" href="/static/css/post.css"/>
+    <link rel="stylesheet" href="/static/css/index.css"/>
 {% endblock %}
 {% block main_content %}
-<div class="posts-container">
+<div class="item-container">
     {% if posts|length %}
         {% for post in posts %}
             <div class="post">
-                <h2> <a href="/posts/{{ post.id }}">Title: {{ post.title }}</a></h2>
-                <p class="post-date">{{ post.created.strftime('%Y %m %d') }}</p>
-                <p>{{ post.content|truncate(1024) }}</p>
+                <h2> <a href="/items/{{ post.id }}">Title: {{ item.title }}</a></h2>
+                <p class="post-date">{{ item.created.strftime('%Y %m %d') }}</p>
+                <p>{{ item.content|truncate(1024) }}</p>
             </div>
         {% endfor %}
     {% else %}

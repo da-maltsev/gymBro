@@ -5,7 +5,7 @@ requires = ["poetry-core"]
 [tool.poetry]
 authors = ["Daniil Maltsev <danil.zlatoust9999@gmail.com>"]
 description = ""
-name = "my-site"
+name = "GymBro"
 readme = "README.md"
 version = "0.1.0"
 
