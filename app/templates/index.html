@@ -4,12 +4,13 @@
 {% endblock %}
 {% block main_content %}
 <div class="item-container">
-    {% if posts|length %}
-        {% for post in posts %}
+    {% if items|length %}
+        {% for item in items %}
             <div class="post">
-                <h2> <a href="/items/{{ post.id }}">Title: {{ item.title }}</a></h2>
+                <h2> <a href="/items/{{ item.id }}">Title: {{ item.title }}</a></h2>
                 <p class="post-date">{{ item.created.strftime('%Y %m %d') }}</p>
                 <p>{{ item.content|truncate(1024) }}</p>
+                <p>{{ item.hehe|truncate(1024) }}</p>
             </div>
         {% endfor %}
     {% else %}
