@@ -1,0 +1,16 @@
+.about-content {
+  max-width: 70vw;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #e3dcd1;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-content p {
+  color: #333; /* Dark text color for post content */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  font-size: 20px;
+}

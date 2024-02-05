@@ -1,0 +1,37 @@
+.post-detail {
+  max-width: 70vw;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #e3dcd1;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.post-detail h2 {
+  color: #6b5440;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.post-detail p {
+  color: #333;
+  font-size: 20px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+.post-detail .post-date {
+  color: #888;
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .post-detail {
+    flex: 1 0 100%;
+    max-width: 80vw;
+  }
+}
